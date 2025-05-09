@@ -8,6 +8,7 @@
 body {
     color: #fafaf7;
     background:black;
+    overflow-x: hidden;
 }
 @font-face {
     font-family:'Lora';
@@ -31,7 +32,7 @@ body {
 }
 .header {
     position:fixed;
-    width: 100%;
+    width: 100vw;
     padding: 20px 10%;
     background: transparent;
     display: flex;
@@ -841,4 +842,169 @@ section{
     box-shadow: 0 0 5px cyan,
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan
+}
+
+
+
+
+
+
+@media only  screen and (max-width:600px) {
+    .home{
+        background: red;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-img{
+        position:relative;
+        left: -12%;
+        /* top: -4%;? */
+        /* bottom: -4%; */
+    }
+    .about-img img{
+        padding-left: -10%;
+        width: 100%;
+        height: 100%;
+    }
+    .about-text{
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+    .about-text h2{
+        margin-top: -1%;
+    }
+  .projects{
+    width: 100vw;
+  }
+    .box2{
+        /* margin-top: 50%; */
+        text-align: center;
+        margin:auto;
+        position: relative;
+        padding: auto;
+        width: 90vw;
+        align-items: center;
+        height: fit-content;
+
+    }
+    .main-text{
+        width: 100vw;
+        text-align: center;
+    }
+    #project h2{
+        text-align: center;
+        margin-left: -10%;
+        font-size: 50px;
+    }
+    .portfolio{
+        text-align: center;
+    }
+    .portfolio-content{
+        font-size: 20px;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        align-items: center;
+        justify-content: center;
+        margin-left: -15%;
+    }
+    .portfolio-content img{
+        height: 50vh;
+        width: 70vw;
+        /* margin-left: -10%; */
+    }
+    .portfolio-content .layer{
+        width: 70vw;
+        /* align-items: center; */
+        margin:0;
+    }
+    .skill{
+        height: 160vh;
+    }
+
+    .box{
+        width: 90vw;
+        height: 150vh;
+    }
+    .box1{
+        font-size: 20px;
+        width: 89vw;
+        height:100vh;
+        /* background-color: #0ef; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: -15%; */
+    }
+    .Technical-bars .bar .progress-line{
+        width: 380px;
+    }
+    .container1{
+        align-items: center;
+        margin-top:1%;
+    }
+    .container1 .heading1{
+        margin-left: 150px;
+        margin-top: -1%;
+        margin-top: 40px;
+    }
+    .container1 .radical-bars{
+        margin-left: 40px;
+        margin-top: -7%;
+    }
+    .heading1{
+        margin-top: 25%;
+        margin-left: 70px;
+    }
+    .bar{
+        width: 90vw;
+    }
+    .progress-line{
+        width: 50vw;
+        height: 100vh;
+    }
+    .sub-title {
+        margin-left: 90px;
+    }
+    .contact{ 
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        /* margin-bottom: 10%; */
+        /* width: 89vw; */
+    }
+    .contact-form{
+        width: 75vw;
+        margin-left: 70px;
+        margin-bottom: 10%;
+    }
+    .contact-text{
+        margin-left: -15%;
+    }
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display:block;
+    }
+    .navbar a{
+        float: none;
+        display: block;
+        text-align: left;
+        
+    }
+    .navbar {position: relative;}
+    .navbar.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
 }
