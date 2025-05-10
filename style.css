@@ -32,10 +32,12 @@ body {
 }
 .header {
     position:fixed;
-    width: 100vw;
+    width: 80vw;
+    margin-left: 10%;
     padding: 20px 10%;
     background: transparent;
     display: flex;
+    /* border-radius: 20px; */
     justify-content: space-between;
     align-self: center;
     z-index: 100;
@@ -46,20 +48,25 @@ body {
 
 .header.scrolled {
     background:#153d4d;
-    border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(218, 59, 59, 0.1);
+    height: 12vh;
+    border-radius: 20px;
+    /* box-shadow: 0 2px 5px rgba(218, 59, 59, 0.1); */
     transform: translateY(0); /* Ensures it's visible */
     opacity: 1;
 }
 
 .header.hide-before-scroll {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     opacity: 0;
+}
+.header img{
+    width: 3vw;
+    height: 6vh;
+    margin-left: -13%;
 }
 
 
-
-.logo {
+/* .logo {
     position: relative;
     font-family: 'Lora',sans-serif;
     font-size: 35px;
@@ -71,17 +78,19 @@ body {
     animation: slideRight .5s ease forwards;
     font-family: 'Lora',sans-serif;
 
-}
+} */
 
 .navbar a {
     display: inline-block;
-    align-items: center;
+    /* align-items: center; */
+    margin-top: 2%;
     font-size: 30px;
     font-family:'Yrsa1',sans-serif;
     color: #fff;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-weight: 500;
-    margin-right: 20px;
+    /* margin-left: 500px; */
+    /* margin-right: -10%; */
     transition: .3s;
     opacity: 5;
     animation: slideTop .5s ease forwards;
@@ -361,7 +370,7 @@ section{
 .container1{
     width: 600px;
     height: 300px;
-    margin-top: -30%;
+    margin-top: -27%;
     /* padding: 10px 0px; */
     margin-left: 10%;
     /* margin-bottom: -25%; */
@@ -369,7 +378,8 @@ section{
 }
 .heading1{
     /* text-align: center; */
-    margin-left: 25%;
+    margin-left: 15%;
+    font-size: 30px;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 3px;
@@ -382,7 +392,8 @@ section{
 }
 
 .Technical-bars .bar{
-    margin-top: 40px 0;
+    margin-top: 10px;
+    /* margin-bottom: -20px; */
 }
 
 .Technical-bars .bar:first-child{
@@ -393,11 +404,12 @@ section{
 }
 
 .Technical-bars .bar .info{
-    margin-bottom: 10px;
+    margin-top: -15px;
 }
 .Technical-bars .bar .info span{
     font-size: 17px;
     font-weight: 500;
+    /* margin-top: -100px; */
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
     font-family: 'Lora1',sans-serif;
@@ -451,10 +463,10 @@ section{
     padding: 1px 8px;
     background-color: #081b29;
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
     /* font-family: ; */
     border-radius: 3px;
-    top: -28px;
+    /* top: -1px;? */
     right: -20px;
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
@@ -486,7 +498,7 @@ section{
     border: 7px solid transparent;
     border-bottom-width: 0px;
     border-right-width: 0px;
-    top: -10px;
+    top: 10px;
     right:0;
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
@@ -846,6 +858,27 @@ section{
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan
 }
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 30px from the right */
+    z-index: 50; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    height: 7vh;
+    width: 3vw;
+    background-color:#23b3bd; /* Set a background color */
+    color: rgb(255, 255, 255); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 150px; /* Rounded corners */
+    font-size: 30px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #0ef; /* Add a dark-grey background on hover */
+  }
 
 
 
@@ -881,9 +914,9 @@ section{
     .about-text h2{
         margin-top: -1%;
     }
-  .projects{
-    width: 100vw;
-  }
+    .projects{
+        width: 100vw;
+    }
     .box2{
         /* margin-top: 50%; */
         text-align: center;
@@ -948,6 +981,9 @@ section{
         justify-content: center;
         /* margin-left: -15%; */
     }
+    .container{
+        height: 100vh;
+    }
     .Technical-bars .bar .progress-line{
         width: 380px;
     }
@@ -965,7 +1001,7 @@ section{
         margin-top: -7%;
     }
     .heading1{
-        margin-top: 25%;
+        margin-top: 40%;
         margin-left: 70px;
     }
     .bar{
@@ -974,6 +1010,7 @@ section{
     .progress-line{
         width: 50vw;
         height: 100vh;
+        /* margin-top: 10%; */
     }
     .sub-title {
         margin-left: 90px;
@@ -993,6 +1030,45 @@ section{
     .contact-text{
         margin-left: -15%;
     }
+    .header.scrolled {
+        background:#184658;
+        height: 10vh;
+        border-radius: 20px;
+        box-shadow: 0 2px 10px rgba(218, 59, 59, 0.1);
+        transform: translateX(0); 
+        opacity: 1;
+    }
+    
+    .header.hide-before-scroll {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 15px; /* Place the button 30px from the right */
+        z-index: 50; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        height: 7vh;
+        width: 9vw;
+        background-color:#23b3bd; /* Set a background color */
+        color: rgb(255, 255, 255); /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 5px; /* Some padding */
+
+        border-radius: 150px; /* Rounded corners */
+        font-size: 30px; /* Increase font size */
+      }
+      
+      #myBtn:hover {
+        background-color: #0ef; /* Add a dark-grey background on hover */
+      }
+    .header img{
+        width: 13%;
+        margin-top: -2%;
+    }
     /* .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
         float: right;
@@ -1008,7 +1084,7 @@ section{
     .navbar.icon {
         position: absolute;
         right: 0;
-        top: 0;
+        top: -100;
 
     } */
 }

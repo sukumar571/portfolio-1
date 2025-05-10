@@ -10,20 +10,70 @@
     <script src="https://example.com/path/to/your/script.js"></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="script.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // primary: '#1F2937',
+                        secondary: '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="header">
-        <img src="final.png" alt="" style="height: 6vh;" width="4%">
+        <img src="final.png" alt="">   
+            <nav class="bg-primary text-white p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <!-- <a href="#" class="text-2xl font-bold">Logo</a> -->
 
-        <nav class="navbar">
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+  <!-- Hamburger Icon -->
+            <svg id="icon-hamburger" class="w-8 h-8 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+  <!-- X Icon -->
+            <svg id="icon-close" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            </button>            
+            <!-- Desktop Menu -->
+            <div id="nav-links" class="hidden md:flex space-x-6 navbar">
+                <a href="#home" class="hover:text-secondary transition duration-300">Home</a>
+                <a href="#about" class="hover:text-secondary transition duration-300">About</a>
+                <a href="#skill" class="hover:text-secondary transition duration-300">Skill</a>
+                 <a href="#project" class="hover:text-secondary transition duration-300">Project</a>
+                <a href="#contact" class="hover:text-secondary transition duration-300">Contact</a>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="md:hidden hidden navbar">
+            <div class="flex flex-col space-y-2 mt-4">
+                <a href="#" class="hover:text-secondary transition duration-300 py-2">Home</a>
+                <a href="#" class="hover:text-secondary transition duration-300 py-2">About</a>
+                <a href="#" class="hover:text-secondary transition duration-300 py-2">Skill</a>
+                <a href="#" class="hover:text-secondary transition duration-300 py-2">Project</a>
+                <a href="#" class="hover:text-secondary transition duration-300 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+        <!-- <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2" >About</a>
             <a href="#skill" style="--i:3" >skill</a>
             <a href="#project" style="--i:4" >Project</a>
             <a href="#contact" style="--i:6" >Contact</a>
-            <!-- <a href="" class="icon" onclick="myFunction()"> -->
-                <!-- <i class="fa fa-bars"></i> -->
-        </nav>
+        </nav> -->
     </header>
     <section class="home" id="home">
         <div class="home-content">
@@ -39,6 +89,7 @@
             </div>
             <a href="#about" class="btn-box">More About Me</a>
         </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#11180</button>
     </section>
     <section class="about" id="about">
         <div class="about-img">
@@ -203,7 +254,7 @@
             <form action="">
                 <input type="" placeholder="Enter Your Name" required>
                 <input type="email" placeholder="Enter Your Email" required>
-                <input type="" placeholder="Enter Your Subject">
+                <!-- <input type="" placeholder="Enter Your Subject"> -->
                 <textarea name="" id="" cols="20" rows="3" placeholder="Enter Your Message"></textarea>
                 <input type="submit" value="submit" class="send">
             </form>
