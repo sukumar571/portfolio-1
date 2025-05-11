@@ -922,10 +922,11 @@ html {
         width: 90vw;
         align-items: center;
         justify-content: center;
-        margin-left: -5%;
+        margin-left: 5%;
     }
     .about-text h2{
         margin-top: -1%;
+        margin-left: -10px;
     }
     .projects{
         width: 100vw;
