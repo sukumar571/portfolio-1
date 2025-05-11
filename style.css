@@ -976,7 +976,7 @@ html {
 
     .box{
         width: 90vw;
-        height: 150vh;
+        height: 100vh;
     }
     .box1{
         font-size: 20px;
@@ -1009,8 +1009,8 @@ html {
         margin-top: 40px;
     }
     .heading1{
-        margin-top: 40%;
-        margin-left: 70px;
+        margin-top: 20%;
+        margin-left: 50px;
     }
     .bar{
         width: 90vw;
