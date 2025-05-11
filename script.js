@@ -44,63 +44,9 @@ mobileMenuBtn.addEventListener('click', () => {
   iconClose.classList.toggle('hidden');
 });
 
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+
 ///////////////////////////////////////////
 
-// const animatedElements = document.querySelectorAll('.box, .box1, .box2, .row');
-
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             entry.target.classList.add('animate');
-//         } else {
-//             entry.target.classList.remove('animate'); // Allow re-animation
-//         }
-//     });
-// }, {
-//     threshold: 0.2
-// });
-
-// const radialPaths = document.querySelectorAll('.path');
-
-// const radialObserver = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             entry.target.style.transition = 'stroke-dashoffset 1s ease';
-//             entry.target.style.strokeDashoffset = '0';
-//         } else {
-//             const totalLength = entry.target.getTotalLength();
-//             entry.target.style.strokeDashoffset = totalLength;
-//         }
-//     });
-// }, {
-//     threshold: 0.5
-// });
-
-// radialPaths.forEach(path => {
-//     const totalLength = path.getTotalLength();
-//     path.style.strokeDasharray = totalLength;
-//     path.style.strokeDashoffset = totalLength;
-//     radialObserver.observe(path);
-// });
-
-
-// const technicalBars = document.querySelectorAll('.Technical-bars');
-
-// const progressObserver = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//         const spans = entry.target.querySelectorAll('.progress-line span');
-//         if (entry.isIntersecting) {
-//             spans.forEach(span => {
-//                 span.style.transform = 'scaleX(1)';
-//             });
-//         } else {
-//             spans.forEach(span => {
-//                 span.style.transform = 'scaleX(0)';
-//             });
-//         }
-//     });
-// }, {
-//     threshold: 0.4
-// });
-
-// technicalBars.forEach(bar => progressObserver.observe(bar));       
