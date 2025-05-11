@@ -976,7 +976,7 @@ html {
 
     .box{
         width: 90vw;
-        height: 100vh;
+        height: fit-content;
     }
     .box1{
         font-size: 20px;
