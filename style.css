@@ -922,7 +922,7 @@ html {
         width: 90vw;
         align-items: center;
         justify-content: center;
-        /* margin-left: 5%; */
+        margin-left: -5%;
     }
     .about-text h2{
         margin-top: -1%;
@@ -980,7 +980,7 @@ html {
 
     .box{
         width: 90vw;
-        height: 100vh;
+        height: 120vh;
     }
     .box1{
         font-size: 20px;
