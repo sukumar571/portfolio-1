@@ -81,7 +81,7 @@ body {
 } */
 
 .navbar a {
-    display: inline-block;
+    display:inline-block;
     align-items: center;
     margin-top: 2%;
     font-size: 30px;
@@ -89,7 +89,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 30%;
+    margin-left: 10%;
     /* margin-right: -10%; */
     transition: .3s;
     opacity: 5;
@@ -262,6 +262,7 @@ body {
     margin-left: 20%;
     margin-top: 100px;
     border-radius: 5%;
+    animation: slideRight .9s ease forwards;
     /* border: 2px solid #ff004f; */
 
 }
@@ -276,10 +277,10 @@ body {
 }
 .about-text h2{
     font-size: 55px;
-    margin-left: 25%;
+    margin-left: 30%;
     line-height: 2.0;
     font-family: 'Lora1',sans-serif;
-    margin-top: 50px;
+    margin-top: 30px;
     /* text-align: center; */
 }
 .about-text h2 span{
@@ -639,6 +640,7 @@ section{
 }
 .row{
     position:relative;
+    animation: slideTop .7s ease forwards;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
@@ -809,6 +811,7 @@ section{
 }
 .contact-form{
     margin-left: 140px;
+    animation: slideLeft .7s ease forwards;
 }
 .contact-form form{
     position: relative;
@@ -880,7 +883,9 @@ section{
     background-color: #0ef; /* Add a dark-grey background on hover */
   }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -1019,6 +1024,7 @@ section{
         display: flex;
         flex-direction: column;
         height:auto;
+        margin-top: 10%;
         /* margin-bottom: 10%; */
         /* width: 89vw; */
     }
@@ -1068,6 +1074,43 @@ section{
     .header img{
         width: 13%;
         margin-top: -2%;
+    }
+    header{
+        /* background-color: wheat; */
+        height: 2vh;
+        background: transparent;
+        width: 80vw;
+    }
+    #mobile-menu-btn{
+        
+        position: absolute;
+        top: 20px;
+    }
+    #mobile-menu{
+        
+        position: absolute;
+        top: 100px;
+        height: 50vh;
+        /* right: 20px; */
+        margin-left:-110%;
+        background-color: #153d4d;
+        /* background-color: transparent; */
+        width: 50vw;
+        /* animation: slideRight 5s ease forwards; */
+        margin-top: 90px;
+        transform:skew(-20deg);
+        opacity: 0.7;
+
+    }
+    #menu-1{
+        margin-top:25%;
+    }
+    #mobile-menu a{
+        width: 100%;
+        opacity: 1;
+        color:rgb(254, 254, 254);
+        margin-left: 150px;
+        animation: slideRight .9s ease forwards;
     }
     /* .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
