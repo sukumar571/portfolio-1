@@ -976,7 +976,7 @@ html {
 
     .box{
         width: 90vw;
-        height: 150vh;
+        height: 100vh;
     }
     .box1{
         font-size: 20px;
@@ -995,7 +995,7 @@ html {
         height: 100vh;
     }
     .Technical-bars .bar .progress-line{
-        width: 380px;
+        width: 350px;
     }
     .container1{
         height: 100vh;
@@ -1004,7 +1004,7 @@ html {
         margin-left: 120px;
     }
     .container1 .heading1{
-        margin-left: 120px;
+        margin-left: 100px;
         margin-top: -1%;
         margin-top: 40px;
     }
@@ -1053,11 +1053,11 @@ html {
         opacity: 0;
     }
     #myBtn {
-        display: none; /* Hidden by default */
-        position: fixed; /* Fixed/sticky position */
-        bottom: 20px; /* Place the button at the bottom of the page */
-        right: 15px; /* Place the button 30px from the right */
-        z-index: 50; /* Make sure it does not overlap */
+        display: none;
+        position: fixed; 
+        bottom: 20px;
+        right: 15px;
+        z-index: 50; 
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
         height: 7vh;
