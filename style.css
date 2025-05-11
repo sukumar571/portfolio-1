@@ -976,7 +976,7 @@ html {
 
     .box{
         width: 90vw;
-        height: fit-content;
+        height: 150vh;
     }
     .box1{
         font-size: 20px;
@@ -995,7 +995,7 @@ html {
         height: 100vh;
     }
     .Technical-bars .bar .progress-line{
-        width: 350px;
+        width: 320px;
     }
     .container1{
         height: 100vh;
